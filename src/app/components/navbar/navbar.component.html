@@ -1,0 +1,26 @@
+<div class="flex justify-between items-center py-3 px-20 bg-green-700 shadow-lg">
+    <div class="font-bold text-white text-2xl uppercase">
+        <a href="#">
+            {{title}}
+        </a>
+    </div>
+    <ul class="flex justify-around space-x-10 text-white">
+        <li>
+            <a href="#" class="hover:text-lime-300"> Home</a>
+        </li>
+        <li>
+            <a href="#" class="hover:text-lime-300"> About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:text-lime-300"> Gallery</a>
+        </li>
+    </ul>
+    <!-- add schedule button -->
+    <app-button 
+        color="darkgreen" 
+        text="Add Schedule" 
+        background="white"
+        (btnClick)="toggleAddTask()"
+    >
+    </app-button>
+</div>

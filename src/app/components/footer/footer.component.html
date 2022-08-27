@@ -1,0 +1,41 @@
+<div class="flex justify-between items-center py-6 px-10 bg-zinc-900 w-full text-lime-100">
+    <div class=" mx-20 flex flex-col space-y-8 md:flex-row md:space-x-20 md:space-y-0">
+        <div class="space-y-2 ">
+            <h2 class="font-bold text-lime-600"> QUICK LINKS</h2>
+            <ul class="space-y-3 mt-4">
+                <li>
+                    <a href="#" class="hover:text-lime-400"> Home </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-lime-400"> About </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-lime-400"> contact </a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-2 ">
+            <h2 class="font-bold text-lime-600"> FAQ's</h2>
+            <ul class="space-y-3 mt-4">
+                <li>
+                    <a href="#" class="hover:text-lime-400"> Question 1 </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-lime-400"> Question 1  </a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-lime-400"> Question 1  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-2">
+        <app-button 
+            color="white" 
+            background="red" 
+            text="Remove Task"
+            (btnClick)="toggleRemoveTask()"
+        >
+        </app-button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<ul class="max-w-lg divide-y divide-gray-200 dark:divide-gray-700 space-y-3">
+    <li class="p-3 sm:pb-4 border-slate-100 border-2 rounded-sm">
+       <div class="flex items-center space-x-4">
+          <div class="flex-shrink-0">
+             <fa-icon [icon]="faTasks" class="text-2xl text-blue-500"></fa-icon>
+          </div>
+          <div class="flex-1 min-w-0">
+             <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                {{task.todo}}
+             </p>
+             <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                {{task.date}}
+             </p>
+          </div>
+          <div class="inline-flex items-center text-xs px-1 font-bold bg-red-700 rounded-full cursor-pointer hover:bg-red-600">
+             <fa-icon [icon]="faTimes" class="text-white" (click)="onDeleteTask(task)"></fa-icon>
+          </div>
+       </div>
+    </li>
+</ul>
+
